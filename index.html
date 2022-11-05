@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+
+<body>
+    <h1> Obługa klikniecia</h1>
+    <section>
+        <h2>Liczniki</h2>
+        <!-- #1 -->
+        <button id="counter-button-1" onclick="document.getElementById('counter').innerHTML++;">Kliknij!</button>
+        <!-- #2 -->
+        <button id="counter-button-2" onclick="incrementCounter()">Kliknij!</button>
+        <!-- #3 -->
+        <button id="counter-button-3">Kliknij!</button>
+        <!-- #4 -->
+        <button id="counter-button-4">Nie klikaj!</button>
+    </section>
+    <section>
+        <h2>Panel sterowania</h2>
+        <!-- #5 -->
+        <button id="enable-button">Włącz ten licznik</button>
+        <button id="disable-button">Wyłącz ten licznik</button><br>
+        <button id="counter-button-5">Kliknij!</button>
+    </section>
+    <section>
+        <h2>Licznik kliknieć</h2>
+        <p>Kliknąłeś <span id="counter">0</span> razy.</p>
+    </section>
+    <script src="clikCounter.js"></script>
+</body>
+
+</html>
