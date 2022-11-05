@@ -23,7 +23,7 @@ function registerEnableButton() {
     let enableButton = document.getElementById('enable-button');
     enableButton.onclick = () => {
         let counterButton5 = document.getElementById('counter-button-5');
-        counterButton5.addEventListener("click", incrementCounter);
+        counterButton5.addEventListener("click", turboIncrementCounter);
     }
 }
 
@@ -31,8 +31,14 @@ function registerDisableButton() {
     let disableButton = document.getElementById("disable-button");
     disableButton.onclick = () => {
         let couterButton5 = document.getElementById('counter-button-5');
-        couterButton5.removeEventListener("click", incrementCounter);
+        couterButton5.removeEventListener("click", turboIncrementCounter);
     }
+}
+
+function turboIncrementCounter() {
+    let counter = +document.getElementById('counter').innerHTML;
+    counter += 10;
+    document.getElementById('counter').innerHTML = counter;
 }
 registerEnableButton();
 registerDisableButton();
